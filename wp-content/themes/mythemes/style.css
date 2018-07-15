@@ -613,6 +613,14 @@ input[type="button"],
 	left: 0;
 }
 
+.image-post-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
 .sticky .post-overlay > p {
 	position: absolute;
 	top: 30px;
@@ -675,8 +683,8 @@ input[type="button"],
 /* With Background Image */
 
 .has-post-thumbnail .post-overlay { 
-	background: rgba( 0, 0, 0, 0.75 );
-	opacity: 0; 
+	/*background: rgba( 0, 0, 0, 0.75 );*/
+	/*opacity: 0; */
 }
 
 .show-preview-titles .has-post-thumbnail .post-overlay {

@@ -2,7 +2,7 @@
 
 <a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>" <?php post_class( 'post' ); ?> style="background-image: url(<?php echo $thumb['0']; ?>);">
 
-	<div class="post-overlay">
+	<div class="<?php !empty($thumb['0']) ? 'post-overlay' : 'image-post-overlay'; ?>">
 		
 		<?php if ( is_sticky() && !is_single() ) : ?>
 		
