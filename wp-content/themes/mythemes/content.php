@@ -2,7 +2,7 @@
 
 <a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>" <?php post_class( 'post' ); ?> style="background-image: url(<?php echo $thumb['0']; ?>);">
 
-	<div class="<?php echo !empty($thumb['0']) ? 'post-overlay' : 'image-post-overlay'; ?>">
+	<div class="<?php echo empty($thumb['0']) ? 'post-overlay' : 'image-post-overlay'; ?>">
 		
 		<?php if ( is_sticky() && !is_single() ) : ?>
 		
@@ -15,7 +15,7 @@
 		    <p class="archive-post-date"><?php the_time( get_option( 'date_format' ) ); ?></p>
 							
 		    <?php if ( get_the_title() ) : ?>
-		    	<h2 class="<?php echo !empty($thumb['0']) ? 'archive-post-title' : 'image-archive-post-title'; ?>"><?php the_title(); ?></h2>
+		    	<h2 class="<?php echo empty($thumb['0']) ? 'archive-post-title' : 'image-archive-post-title'; ?>"><?php the_title(); ?></h2>
 		    <?php endif; ?>
 	    
 		</div>
