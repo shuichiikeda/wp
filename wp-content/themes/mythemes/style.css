@@ -654,15 +654,6 @@ input[type="button"],
 	word-break: break-word;
 }
 
-.image-archive-post-title {
-	font-size: 1.375em;
-	font-weight: 700;
-	line-height: 120%;
-	text-transform: uppercase;
-		-ms-word-break: break-word;
-	word-break: break-word;
-}
-
 .archive-post-date {
 	color: #999;
 	font-size: 0.875em;
