@@ -619,6 +619,8 @@ input[type="button"],
 	right: 0;
 	bottom: 0;
 	left: 0;
+	background: #1b1b1b7a;
+	opacity: 0.8;
 }
 
 .sticky .post-overlay > p {
@@ -646,6 +648,15 @@ input[type="button"],
 
 .archive-post-title {
 	color: #222;
+	font-size: 1.375em;
+	font-weight: 700;
+	line-height: 120%;
+	text-transform: uppercase;
+		-ms-word-break: break-word;
+	word-break: break-word;
+}
+
+.image-archive-post-title {
 	font-size: 1.375em;
 	font-weight: 700;
 	line-height: 120%;
