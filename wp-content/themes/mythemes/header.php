@@ -8,13 +8,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
 		 
 		<?php wp_head(); ?>
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<script>
-     		(adsbygoogle = window.adsbygoogle || []).push({
-          		google_ad_client: "ca-pub-7870164007728460",
-          		enable_page_level_ads: true
-		     });
-		</script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- kaigai website -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-7870164007728460"
+         data-ad-slot="3050514414"
+         data-ad-format="auto"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
