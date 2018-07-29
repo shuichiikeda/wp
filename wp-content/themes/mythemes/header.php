@@ -17,6 +17,7 @@
 
       gtag('config', 'UA-122317622-2');
     </script>
+    <meta name="google-site-verification" content="HLqJND6oWfQK9JheS95PyZWVq86YTXzQ_A_wWC-sBFs" />
 
 	</head>
 	
