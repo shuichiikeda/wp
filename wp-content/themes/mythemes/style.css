@@ -437,7 +437,7 @@ input[type="button"],
 .header { padding: 70px 0; }
 
 .header.section-inner { 
-	width: 325px; 
+	width:  420px;
 	position: relative;
 	z-index: 2;
 }
@@ -1865,7 +1865,7 @@ p.comment-form-author { margin-right: 5%; }
 }
 
 .credits p:first-child {
-	font-size: 1.175em;
+	font-size: 1.100em;
 	color: #fff;
 }
 
@@ -2217,7 +2217,7 @@ img#wpstats {
 	
 	.header { padding: 30px 0; }
 	
-	.blog-title { font-size: 1.5em; }
+	.blog-title { font-size: 1.4em; }
 	
 	.blog-description {
 		font-size: 0.875em;
