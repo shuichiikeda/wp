@@ -619,7 +619,10 @@ input[type="button"],
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: #1b1b1b7a;
+	/*background: #1b1b1b7a;*/
+	background: -moz-linear-gradient(top, #dddddd85, #1b1b1b7a);
+	background: -webkit-linear-gradient(top, #dddddd85, #1b1b1b7a);
+	background: linear-gradient(to bottom, #dddddd85, #1b1b1b7a);
 	opacity: 0.8;
 }
 
