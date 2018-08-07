@@ -718,13 +718,30 @@ input[type="button"],
 	color: #fff; 
 }
 
-
 /* -------------------------------------------------------------------------------- */
 /*	6. Single Post
 /* -------------------------------------------------------------------------------- */
 
 
 .post-container { background: #fff; }
+
+.post-container h1 {
+	padding: 0.4em 0.5em;
+	color: #494949;
+	background: #f4f4f4;
+	border-left: solid 5px #7db4e6;
+	border-bottom: solid 3px #d7d7d7;
+}
+.post-container h2
+{
+	padding: 0.25em 0.5em;
+	color: #494949;
+	background: transparent;
+	border-left: solid 5px #7db4e6;
+}
+.post-container h3 {
+	background: linear-gradient(transparent 70%, #a7d6ff 70%);
+}
 
 
 /* Featured Media  ----------------------------------------- */
