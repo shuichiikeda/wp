@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
-<div class="content section-inner">		
+<div class="content section-inner">
+  <!--          カテゴリの呼び出し１ -->
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	
