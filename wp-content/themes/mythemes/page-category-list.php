@@ -1,8 +1,21 @@
 <?php get_header(); ?>
+<style>
+  .cat-item a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #FFF;
+    background-image: -webkit-linear-gradient(#6795fd 0%, #67ceff 100%);
+    background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+    transition: .4s;
+  }
+  .cat-item a:hover {
+    background-image: -webkit-linear-gradient(#6795fd 0%, #67ceff 70%);
+    background-image: linear-gradient(#6795fd 0%, #67ceff 70%);
+  }
 
+</style>
 <div class="content section-inner">
-  <!--          カテゴリの呼び出し１ -->
-
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	
 		<div <?php post_class( 'post single' ); ?>>
@@ -12,54 +25,6 @@
             <?php wp_list_categories('title_li=&show_count=1&use_desc_for_title=1&depth=0'); //カテゴリの呼び出し?>
         </ul>
       </div>
-
-      <div class="post-container">
-		
-			<?php if ( has_post_thumbnail() ) : ?>
-			
-				<?php 
-				$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail_size' ); 
-				$thumb_url = $thumb['0']; 
-				?>
-		
-				<div class="featured-media">
-		
-					<?php the_post_thumbnail( 'post-image' ); ?>
-					
-				</div><!-- .featured-media -->
-					
-			<?php endif; ?>
-			
-			<div class="post-header">
-												
-				<?php the_title( '<h1 class="post-title">', '</h1>' ); ?>
-			
-			</div>
-			
-			<div class="post-inner">
-				    
-			    <div class="post-content">
-			    
-					<?php 
-					
-					the_content();
-					
-					wp_link_pages( 'before=<div class="clear"></div><p class="page-links">' . __( 'Pages:', 'hitchcock' ) . ' &after=</p>&seperator= <span class="sep">/</span> ' ); 
-					
-					?>
-			    
-			    </div><!-- .post-content -->
-			    
-			    <div class="clear"></div>
-			    
-			    <?php edit_post_link(__( 'Edit Page', 'hitchcock' ), '<div class="post-meta"><p class="post-edit">', '</p></div>' ); ?>
-	
-			</div><!-- .post-inner -->
-			
-			<?php comments_template( '', true ); ?>
-			
-			</div><!-- .post-container -->
-		
 		</div><!-- .post -->
 		
 	<?php 
