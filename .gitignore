@@ -45,10 +45,10 @@ wp-activate.php
 wp-config.php
 wp-login.php
 wp-admin
-wp-content/*
 wp-mail.php
 wp-blog-header.php
 wp-cron.php
 wp-settings.php
 
 !wp-content/themes/hitchcock
+!wp-content/themes/*
