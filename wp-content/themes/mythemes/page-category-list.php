@@ -18,12 +18,6 @@
   }
 
 </style>
-<script>
-  $("ul.category-list > li").on("click",function(){
-    window.location = $(this).find("a").attr("href");
-    return false;
-  });
-</script>
 <div class="content section-inner">
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	

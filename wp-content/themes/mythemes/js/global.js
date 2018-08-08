@@ -1,7 +1,10 @@
 jQuery(document).ready(function($) {
-	
-	
-	// Enable dropdown menus on touch devices
+  $("ul.category-list > li").on("click",function(){
+    window.location = $(this).find("a").attr("href");
+    return false;
+  });
+
+  // Enable dropdown menus on touch devices
 	$( '.main-menu li:has(ul)' ).doubleTapToGo();
 	
 	
