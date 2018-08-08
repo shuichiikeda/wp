@@ -10,6 +10,7 @@
     transition: .4s;
     margin: 2px;
     width: 20em;
+    background: #fff;
   }
   .cat-itemhover {
     background: #67c5ff;
