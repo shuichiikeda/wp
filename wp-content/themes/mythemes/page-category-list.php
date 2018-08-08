@@ -11,6 +11,7 @@
     margin: 2px;
     width: 20em;
     background: #fff;
+    cursor: pointer;
   }
   .cat-itemhover {
     background: #67c5ff;
