@@ -1,17 +1,19 @@
 <?php get_header(); ?>
 <style>
-  .cat-item a {
+  .cat-item {
     display: inline-block;
-    padding: 0.5em 1em;
+    padding: 0.3em 1em;
     text-decoration: none;
-    color: #FFF;
-    background-image: -webkit-linear-gradient(#6795fd 0%, #67ceff 100%);
-    background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+    color: #67c5ff;
+    border: solid 2px #67c5ff;
+    border-radius: 3px;
     transition: .4s;
+    margin: 2px;
+    width: 20em;
   }
-  .cat-item a:hover {
-    background-image: -webkit-linear-gradient(#6795fd 0%, #67ceff 70%);
-    background-image: linear-gradient(#6795fd 0%, #67ceff 70%);
+  .cat-itemhover {
+    background: #67c5ff;
+    color: white;
   }
 
 </style>
