@@ -18,12 +18,18 @@
   }
 
 </style>
+<script>
+  $("ul.category-list > li").on("click",function(){
+    window.location = $(this).find("a").attr("href");
+    return false;
+  });
+</script>
 <div class="content section-inner">
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	
 		<div <?php post_class( 'post single' ); ?>>
       <diV>
-        <ul>
+        <ul class="category-list">
 <!--          カテゴリの呼び出し -->
             <?php wp_list_categories('title_li=&show_count=1&use_desc_for_title=1&depth=0'); //カテゴリの呼び出し?>
         </ul>
