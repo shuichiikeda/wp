@@ -117,8 +117,9 @@
 		</div><!-- .post -->
 
 	</div><!-- .content -->
-	
-	<?php hitchcock_related_posts( 3 ); ?>
+    <?php wp_list_categories('title_li=&show_count=1&use_desc_for_title=1&depth=0'); //カテゴリの呼び出し?>
+
+    <?php hitchcock_related_posts( 3 ); ?>
 		
 	<?php 
 	endwhile; 

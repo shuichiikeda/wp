@@ -54,7 +54,7 @@
 			</div><!-- .post-container -->
 		
 		</div><!-- .post -->
-
+		
 	<?php 
 	endwhile; 
 	else: ?>
@@ -66,6 +66,5 @@
 	<div class="clear"></div>
 	
 </div><!-- .content -->
-<?php wp_list_categories('title_li=&show_count=1&use_desc_for_title=1&depth=0'); //カテゴリの呼び出し?>
 
 <?php get_footer(); ?>
