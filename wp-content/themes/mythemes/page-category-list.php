@@ -23,7 +23,7 @@
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	
 		<div <?php post_class( 'post single' ); ?>>
-      <diV>
+      <div>
         <ul class="category-list">
 <!--          カテゴリの呼び出し -->
             <?php wp_list_categories('title_li=&show_count=1&use_desc_for_title=1&depth=0'); //カテゴリの呼び出し?>
