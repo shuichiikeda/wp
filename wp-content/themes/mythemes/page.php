@@ -5,7 +5,7 @@
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	
 		<div <?php post_class( 'post single' ); ?>>
-			
+
 			<div class="post-container">
 		
 			<?php if ( has_post_thumbnail() ) : ?>
@@ -54,7 +54,7 @@
 			</div><!-- .post-container -->
 		
 		</div><!-- .post -->
-		
+
 	<?php 
 	endwhile; 
 	else: ?>
@@ -62,7 +62,7 @@
 		<p><?php _e( "We couldn't find any posts that matched your query. Please try again.", "hitchcock" ); ?></p>
 
 	<?php endif; ?>
-
+    <?php wp_list_categories('title_li=&show_count=1&use_desc_for_title=1&depth=0'); //カテゴリの呼び出し?>
 	<div class="clear"></div>
 	
 </div><!-- .content -->
