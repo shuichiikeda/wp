@@ -2,68 +2,132 @@
 
     <div class="content section-inner">
 
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
+    <div id="post-<?php the_ID(); ?>" <?php post_class( 'single single-post' ); ?>>
 
-            <div <?php post_class( 'post single' ); ?>>
+        <div class="post-container">
 
-                <div class="post-container">
+            <?php
 
-                    <?php if ( has_post_thumbnail() ) : ?>
+            $post_format = get_post_format();
 
-                        <?php
-                        $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail_size' );
-                        $thumb_url = $thumb['0'];
-                        ?>
+            if ( $post_format == 'gallery' ) : ?>
 
-                        <div class="featured-media">
+                <div class="featured-media">
 
-                            <?php the_post_thumbnail( 'post-image' ); ?>
+                    <?php hitchcock_flexslider( 'post-image' ); ?>
 
-                        </div><!-- .featured-media -->
+                    <div class="clear"></div>
 
+                </div><!-- .featured-media -->
+
+            <?php elseif ( has_post_thumbnail() ) : ?>
+
+                <div class="featured-media">
+                    　
+                    <?php the_post_thumbnail( 'post-image' ); ?>
+
+                </div><!-- .featured-media -->
+
+            <?php endif; ?>
+
+            <div class="post-header">
+
+                <p class="post-date"><?php the_time( get_option( 'date_format' ) ); ?></p>
+
+                <?php the_title( '<h1 class="post-title">', '</h1>' ); ?>
+
+            </div>
+
+            <div class="post-inner">
+
+                <div class="post-content">
+
+                    <?php the_content(); ?>
+
+                </div><!-- .post-content -->
+
+                <div class="clear"></div>
+
+                <?php
+                $args = array(
+                    'before'           => '<div class="page-links"><span class="title">' . __( 'Pages:', 'hitchcock' ) . '</span>',
+                    'after'            => '<div class="clear"></div></div>',
+                    'link_before'      => '<span>',
+                    'link_after'       => '</span>',
+                    'separator'        => '',
+                    'pagelink'         => '%',
+                    'echo'             => 1
+                );
+
+                wp_link_pages( $args );
+                ?>
+
+                <div class="post-meta">
+
+                    <?php if ( has_category() ) : ?>
+                        <p class="categories">
+                            <?php _e( 'In', 'hitchcock' ); ?> <?php the_category( ', ' ); ?>
+                        </p>
                     <?php endif; ?>
 
-                    <div class="post-header">
+                    <?php if ( has_tag() ) : ?>
+                        <p class="tags">
+                            <?php the_tags( '', ' ' ); ?>
+                        </p>
+                    <?php endif; ?>
 
-                        <?php the_title( '<h1 class="post-title">', '</h1>' ); ?>
+                    <?php edit_post_link( 'Edit Post', '<p class="post-edit">', '</p>' ); ?>
 
-                    </div>
+                </div><!-- .post-meta -->
 
-                    <div class="post-inner">
+                <div class="post-navigation">
 
-                        <div class="post-content">
+                    <?php
+                    $prev_post = get_previous_post();
+                    $next_post = get_next_post();
 
-                            <?php
+                    if ( ! empty( $prev_post ) ) : ?>
 
-                            the_content();
+                        <a class="post-nav-prev" title="<?php echo esc_attr( get_the_title( $prev_post->ID ) ); ?>" href="<?php echo get_permalink( $prev_post->ID ); ?>">
+                            <p><?php _e( 'Next', 'hitchcock' ); ?><span class="hide"> <?php _e( 'Post', 'hitchcock' ); ?></span></p>
+                            <span class="fa fw fa-angle-right"></span>
+                        </a>
 
-                            wp_link_pages( 'before=<div class="clear"></div><p class="page-links">' . __( 'Pages:', 'hitchcock' ) . ' &after=</p>&seperator= <span class="sep">/</span> ' );
+                    <?php endif;
 
-                            ?>
+                    if ( ! empty( $next_post ) ) : ?>
 
-                        </div><!-- .post-content -->
+                        <a class="post-nav-next" title="<?php echo esc_attr( get_the_title( $next_post->ID ) ); ?>" href="<?php echo get_permalink( $next_post->ID ); ?>">
+                            <span class="fa fw fa-angle-left"></span>
+                            <p><?php _e( 'Previous', 'hitchcock' ); ?><span class="hide"> <?php _e( 'Post', 'hitchcock' ); ?></span></p>
+                        </a>
+                    <?php endif; ?>
 
-                        <div class="clear"></div>
+                    <div class="clear"></div>
 
-                        <?php edit_post_link(__( 'Edit Page', 'hitchcock' ), '<div class="post-meta"><p class="post-edit">', '</p></div>' ); ?>
+                </div><!-- .post-navigation -->
 
-                    </div><!-- .post-inner -->
+            </div><!-- .post-inner -->
 
-                    <?php comments_template( '', true ); ?>
+            <?php comments_template( '', true ); ?>
 
-                </div><!-- .post-container -->
+        </div><!-- .post-container -->
 
-            </div><!-- .post -->
+    </div><!-- .post -->
 
-        <?php
-        endwhile;
-        else: ?>
+    </div><!-- .content -->
+    <?php wp_list_categories('title_li=&show_count=1&use_desc_for_title=1&depth=0'); //カテゴリの呼び出し?>
 
-            <p><?php _e( "We couldn't find any posts that matched your query. Please try again.", "hitchcock" ); ?></p>
+    <?php hitchcock_related_posts( 3 ); ?>
 
-        <?php endif; ?>
+<?php
+endwhile;
+else: ?>
 
-        <div class="clear"></div>
+    <p><?php _e( "We couldn't find any posts that matched your query. Please try again.", "hitchcock" ); ?></p>
+
+<?php endif; ?>
 
     </div><!-- .content -->
 
