@@ -40,7 +40,7 @@
   <div>
     <ul>
       <!--          カテゴリの呼び出し -->
-        <?php wp_list_categories('title_li=&show_count=1&use_desc_for_title=1&depth=0'); //カテゴリの呼び出し?>
+        <?php // wp_list_categories('title_li=&show_count=1&use_desc_for_title=1&depth=0'); //カテゴリの呼び出し?>
     </ul>
   </div>
   <div class="clear"></div>
