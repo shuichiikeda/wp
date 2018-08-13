@@ -22,6 +22,14 @@
 	</head>
 	
 	<body <?php body_class(); ?>>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 		
 		<div class="navigation">
 			
@@ -145,5 +153,5 @@
 				</ul><!-- .social-menu -->
 			
 			<?php endif; ?>
-			
+      <div class="fb-page" data-href="https://www.facebook.com/Web%E3%82%AF%E3%83%AA%E3%82%A8%E3%82%A4%E3%82%BF%E3%83%BC%E3%81%AF%E3%82%84%E3%82%81%E3%81%A8%E3%81%91-2128537574025382/" data-tabs="timeline" data-width="Min.180 to Max 500" data-height="Min. 70" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Web%E3%82%AF%E3%83%AA%E3%82%A8%E3%82%A4%E3%82%BF%E3%83%BC%E3%81%AF%E3%82%84%E3%82%81%E3%81%A8%E3%81%91-2128537574025382/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Web%E3%82%AF%E3%83%AA%E3%82%A8%E3%82%A4%E3%82%BF%E3%83%BC%E3%81%AF%E3%82%84%E3%82%81%E3%81%A8%E3%81%91-2128537574025382/">Webクリエイターはやめとけ</a></blockquote></div>
 		</div><!-- .header -->
