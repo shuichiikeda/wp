@@ -2343,8 +2343,6 @@ img#wpstats {
 	word-wrap:break-word;
 	max-width:100%;
 	border-radius:5px;
-	margin: 30px;
-	/* sp用 ※4 */
 }
 .blog-card:hover {
 	background: #fee;
