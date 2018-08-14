@@ -654,13 +654,11 @@ add_action( 'customize_preview_init', array( 'hitchcock_customize', 'hitchcock_l
 
 // 記事IDを指定して抜粋文を取得する
 function ltl_get_the_excerpt($post_id){
-//    global $post;
-//    $post_bu = $post;
+    global $post;
+    $post_bu = $post;
     $post = get_post($post_id);
-//    $output = get_the_excerpt();
-//    $post = $post_bu;
-//    $post = get_post( $post -> ID );
-    $output = mb_substr(apply_filters( 'the_content', $post -> post_content ),0,30);
+    $output = get_the_excerpt();
+    $post = $post_bu;
     return $output;
 }
 
@@ -683,8 +681,11 @@ function nlink_scode($atts) {
         $title = esc_html(get_the_title($id));
     }
     //抜粋文を取得
+    var_dump($excerpt);
+    var_dump($id);
     if(empty($excerpt)){
         $excerpt = esc_html(ltl_get_the_excerpt($id));
+        var_dump($excerpt);
     }
 
     //アイキャッチ画像を取得
