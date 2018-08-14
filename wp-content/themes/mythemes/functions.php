@@ -653,13 +653,21 @@ add_action( 'customize_preview_init', array( 'hitchcock_customize', 'hitchcock_l
 //---------------------------------------//
 
 // 記事IDを指定して抜粋文を取得する
-function ltl_get_the_excerpt($post_id){
-    global $post;
-    $post_bu = $post;
-    $post = get_post($post_id);
-    $output = get_the_excerpt();
-    $post = $post_bu;
-    return $output;
+function ltl_get_the_excerpt($post_id='', $length=120){
+    global $post; $post_bu = '';
+
+    if(!$post_id){
+        $post_id = get_the_ID();
+    } else {
+        $post_bu = $post;
+        $post = get_post($post_id);
+    }
+    $mojionly = strip_tags($post-&gt;post_content);
+	if(mb_strlen($mojionly ) &gt; $length) $t = '...';
+	$content =  mb_substr($mojionly, 0, $length);
+	$content .= $t;
+	if($post_bu) $post = $post_bu;
+	return $content;
 }
 
 //内部リンクをはてなカード風にするショートコード
@@ -681,12 +689,8 @@ function nlink_scode($atts) {
         $title = esc_html(get_the_title($id));
     }
     //抜粋文を取得
-    var_dump($excerpt);
-    var_dump($id);
     if(empty($excerpt)){
-        $excerpt = esc_html(ltl_get_the_excerpt($id));
-        var_dump($excerpt);
-        exit;
+        $excerpt = esc_html(ltl_get_the_excerpt($id, 120));
     }
 
     //アイキャッチ画像を取得
