@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
 
 		<?php wp_head(); ?>
-    <link rel="stylesheet" type="text/css" href="./custom.scss">
+    <link rel="stylesheet" type="text/css" href="scss/custom.scss">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122317622-2"></script>
     <script>
