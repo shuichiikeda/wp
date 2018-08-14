@@ -686,6 +686,7 @@ function nlink_scode($atts) {
     if(empty($excerpt)){
         $excerpt = esc_html(ltl_get_the_excerpt($id));
         var_dump($excerpt);
+        exit;
     }
 
     //アイキャッチ画像を取得
