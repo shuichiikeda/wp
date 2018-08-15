@@ -660,7 +660,7 @@ function ltl_get_the_excerpt($post_id){
 //    $output = get_the_excerpt();
 //    $post = $post_bu;
 //    $post = get_post( $post -> ID );
-    $output = mb_substr(str_replace(array("\r\n", "\r", "\n", " ", "　"), '', strip_tags(apply_filters( 'the_content', $post -> post_content ))), 0, 150);
+    $output = mb_substr(str_replace(array("\r\n", "\r", "\n", " ", "　", "&nbsp;"), '', strip_tags(apply_filters( 'the_content', $post -> post_content ))), 0, 150);
     return $output;
 }
 
