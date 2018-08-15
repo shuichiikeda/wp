@@ -660,7 +660,7 @@ function ltl_get_the_excerpt($post_id){
 //    $output = get_the_excerpt();
 //    $post = $post_bu;
 //    $post = get_post( $post -> ID );
-    $output = mb_substr(apply_filters( 'the_content', $post -> post_content ),0,30);
+    $output = mb_substr(str_replace(array("\r\n", "\r", "\n"), '', strip_tags(apply_filters( 'the_content', $post -> post_content ))), 0, 150);
     return $output;
 }
 
@@ -684,7 +684,7 @@ function nlink_scode($atts) {
     }
     //抜粋文を取得
     if(empty($excerpt)){
-        $excerpt = ltl_get_the_excerpt($id);
+        $excerpt = esc_html(ltl_get_the_excerpt($id));
     }
 
     //アイキャッチ画像を取得
