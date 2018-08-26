@@ -1151,10 +1151,10 @@ p.logged-in-as {
     margin-top: auto;
   }
   .entry-meta span {
-    display: inline-block;
+    display: inline-block !important;
   }
   .site-main article:first-child header .entry-meta span {
-    display: inline;
+    display: inline !important;
   }
 }
 
