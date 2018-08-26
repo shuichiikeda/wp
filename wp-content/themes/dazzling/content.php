@@ -26,7 +26,6 @@
 				if ( $categories_list && dazzling_categorized_blog() ) :
 			?>
 			<span class="cat-links"><i class="fa fa-folder-open-o"></i>
-        <?php var_dump($categories_list) ?>
 				<?php printf( __( ' %1$s', 'dazzling' ), $categories_list[0] ); ?>
 			</span>
 			<?php endif; // End if categories ?>
