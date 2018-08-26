@@ -15,9 +15,9 @@
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php dazzling_posted_on(); ?><?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-		<span class="comments-link"><i class="fa fa-comment-o"></i><?php comments_popup_link( __( 'Leave a comment', 'dazzling' ), __( '1 Comment', 'dazzling' ), __( '% Comments', 'dazzling' ) ); ?></span>
-		<?php endif; ?>
+<!--			--><?php //dazzling_posted_on(); ?><!----><?php //if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
+<!--		<span class="comments-link"><i class="fa fa-comment-o"></i>--><?php //comments_popup_link( __( 'Leave a comment', 'dazzling' ), __( '1 Comment', 'dazzling' ), __( '% Comments', 'dazzling' ) ); ?><!--</span>-->
+<!--		--><?php //endif; ?>
 
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 			<?php
@@ -26,12 +26,13 @@
 				if ( $categories_list && dazzling_categorized_blog() ) :
 			?>
 			<span class="cat-links"><i class="fa fa-folder-open-o"></i>
-				<?php printf( __( ' %1$s', 'dazzling' ), $categories_list ); ?>
+        <?php var_dump($categories_list) ?>
+				<?php printf( __( ' %1$s', 'dazzling' ), $categories_list[0] ); ?>
 			</span>
 			<?php endif; // End if categories ?>
 		<?php endif; // End if 'post' == get_post_type() ?>
 
-		<?php edit_post_link( __( 'Edit', 'dazzling' ), '<i class="fa fa-pencil-square-o"></i><span class="edit-link">', '</span>' ); ?>
+<!--		--><?php //edit_post_link( __( 'Edit', 'dazzling' ), '<i class="fa fa-pencil-square-o"></i><span class="edit-link">', '</span>' ); ?>
 
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
