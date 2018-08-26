@@ -1106,7 +1106,7 @@ p.logged-in-as {
 }
 
 @media (max-width: 767px) {
-  .site-mai article {
+  .site-main article {
     display: flex;
     border-bottom: 1px solid #eee;
   }
@@ -1138,7 +1138,7 @@ p.logged-in-as {
     margin-left: auto;
     border-bottom: 1px solid #eee;
   }
-  .site-main article header h2.entry-content {
+  .site-main article:first-child header h2.entry-content {
     font-size: 28px;
     margin-top: auto;
   }
