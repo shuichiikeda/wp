@@ -1150,6 +1150,12 @@ p.logged-in-as {
     font-size: 28px;
     margin-top: auto;
   }
+  .entry-meta span {
+    display: inline-block;
+  }
+  .site-main article:first-child header .entry-meta span {
+    display: inline;
+  }
 }
 
 /*-------------------------
