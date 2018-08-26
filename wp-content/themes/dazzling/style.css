@@ -1154,9 +1154,11 @@ p.logged-in-as {
   }
   .entry-meta span {
     display: inline-block !important;
+    width: 100%;
   }
   .site-main article:first-child header .entry-meta span {
     display: inline !important;
+    width: auto;
   }
 }
 
