@@ -704,6 +704,7 @@ h1.site-title {
 @media (max-width: 767px) {
   .nav.navbar-nav {
     float: none;
+    display: flex;
   }
 }
 /* =Comments
@@ -1102,4 +1103,13 @@ p.logged-in-as {
 	.side-pull-right #primary{
 		float: right;
 	}
+}
+
+@media (max-width: 767px) {
+  .site-main article:first-child .entry-content {
+    margin-bottom: -20px;
+  }
+  .site-main article:first-child a img.thumbnail {
+    margin-bottom: 0;
+  }
 }
