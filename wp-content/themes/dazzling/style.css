@@ -1113,11 +1113,13 @@ p.logged-in-as {
   .site-main article {
     display: flex;
     border-bottom: 1px solid #ccc;
+    margin-top: 10px;
     margin-bottom: 0;
   }
   .site-main article a img.thumbnail {
     width: 170px;
     max-height: 127px;
+    margin-bottom: 10px;
   }
   .site-main article header {
     width: 50%;
