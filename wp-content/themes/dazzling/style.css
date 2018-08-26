@@ -1125,6 +1125,7 @@ p.logged-in-as {
     width: 50%;
     margin-left: 10px;
     border-bottom: none;
+    margin-bottom: 0;
   }
   .site-main article header h2.entry-title {
     font-size: 15px;
