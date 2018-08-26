@@ -1119,6 +1119,7 @@ p.logged-in-as {
   .site-main article a img.thumbnail {
     width: 170px;
     max-height: 127px;
+    min-height: 120px;
     margin-bottom: 10px;
   }
   .site-main article header {
