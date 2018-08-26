@@ -1106,10 +1106,40 @@ p.logged-in-as {
 }
 
 @media (max-width: 767px) {
+  .site-mai article {
+    display: flex;
+    border-bottom: 1px solid #eee;
+  }
+  .site-main article a img.thumbnail {
+    width: 170px;
+  }
+  .site-main article header {
+    width: 50%;
+    margin-left: 10px;
+    border-bottom: none;
+  }
+  .site-main article header h2.entry-content {
+    font-size: 16px;
+    margin-top: 0;
+  }
+  .site-main article:first-child {
+    display: block;
+    border-bottom: none
+  }
   .site-main article:first-child .entry-content {
     margin-bottom: -20px;
   }
   .site-main article:first-child a img.thumbnail {
     margin-bottom: 0;
+    width: 100%;
+  }
+  .site-main article:first-child header {
+    width: 100%;
+    margin-left: auto;
+    border-bottom: 1px solid #eee;
+  }
+  .site-main article header h2.entry-content {
+    font-size: 28px;
+    margin-top: auto;
   }
 }
