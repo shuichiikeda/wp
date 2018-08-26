@@ -26,7 +26,12 @@
 				if ( $categories_list && dazzling_categorized_blog() ) :
 			?>
 			<span class="cat-links"><i class="fa fa-folder-open-o"></i>
-				<?php var_dump(get_the_category_list( __())); ?>
+          <?php
+          $category = get_the_category();
+          if ( $category[0] ) {
+              echo '<a href="' . get_category_link( $category[0]->term_id ) . '">' . $category[0]->cat_name . '</a>';
+          }
+          ?>
 			</span>
 			<?php endif; // End if categories ?>
 		<?php endif; // End if 'post' == get_post_type() ?>
