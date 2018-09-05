@@ -742,7 +742,9 @@ input[type="button"],
 .post-container h3 {
 	background: linear-gradient(transparent 70%, #a7d6ff 70%);
 }
-
+.post-container img {
+	border: 1px #292929 solid;
+}
 
 /* Featured Media  ----------------------------------------- */
 
