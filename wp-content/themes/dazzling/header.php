@@ -14,6 +14,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122317622-2');
+</script>
+<meta name="google-site-verification" content="HLqJND6oWfQK9JheS95PyZWVq86YTXzQ_A_wWC-sBFs" />
 
 <?php wp_head(); ?>
 
@@ -72,6 +80,16 @@
 		<?php dazzling_featured_slider(); ?>
 		<?php dazzling_call_for_action(); ?>
         </div>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- kaigai website -->
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-7870164007728460"
+       data-ad-slot="3050514414"
+       data-ad-format="auto"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
         <div id="content" class="site-content container">
 
             <div class="container main-content-area"><?php
