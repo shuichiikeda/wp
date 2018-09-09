@@ -1171,6 +1171,14 @@ p.logged-in-as {
 .entry-content img {
   border: 1px #9291916b solid;
 }
+
+.site-main .thumbnail {
+  width: 250px;
+}
+
+.site-main article {
+  width: 720px;
+}
 /*-------------------------
   ブログカード
 -------------------------*/
