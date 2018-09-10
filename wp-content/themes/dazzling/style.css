@@ -1164,7 +1164,7 @@ p.logged-in-as {
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .site-main .thumbnail {
     width: 250px;
     height: 195px;
