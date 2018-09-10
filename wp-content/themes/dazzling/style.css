@@ -1164,7 +1164,17 @@ p.logged-in-as {
   }
 }
 
+@media (max-width: 767px) {
+  .site-main .thumbnail {
+    width: 250px;
+    height: 195px;
+  }
 
+  .site-main article {
+    width: 100%;
+    height: 210px;
+  }
+}
 /*-------------------------
   オリジナルCSS
 -------------------------*/
@@ -1172,15 +1182,6 @@ p.logged-in-as {
   border: 1px #9291916b solid;
 }
 
-.site-main .thumbnail {
-  width: 250px;
-  height: 195px;
-}
-
-.site-main article {
-  width: 100%;
-  height: 210px;
-}
 /*-------------------------
   ブログカード
 -------------------------*/
