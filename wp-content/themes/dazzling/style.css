@@ -1269,8 +1269,8 @@ button.original-btn-menu {
   letter-spacing: 0.1em;
   cursor: pointer;
   position: fixed;
-  top: 20px;
-  right: 28px;
+  top: 16px;
+  right: 16px;
   z-index: 1001;
   text-align: center;
   outline: none;
@@ -1337,6 +1337,7 @@ button.original-btn-menu {
     top: 55px;
     left: 16px;
     font-size: 13px;
+    width: 359px;
   }
   #navbar {
     margin-top: 46px;
