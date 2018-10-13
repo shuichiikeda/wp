@@ -1326,10 +1326,10 @@ button.original-btn-menu.original-menu-active .original-menu-close {
     position: absolute;
     top: 0;
   }
-  #logo h1 {
+  #logo h1 a.navbar-brand {
     font-size: 18px;
   }
-  p.side-description {
+  p.site-description {
     position: relative;
     top: 32px;
     left: 14px;

@@ -28,7 +28,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div class="bg" style="display: block;"></div>
+<div class="bg" style="display: none;"></div>
 <div id="page" class="hfeed site">
 
 	<nav class="navbar navbar-default" role="navigation">
