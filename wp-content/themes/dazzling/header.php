@@ -40,11 +40,11 @@
 			    <span class="icon-bar"></span>
 			  </button>
         <button type="button" class="original-btn-menu">
-          <span class="bar bar1"></span>
-          <span class="bar bar2"></span>
-          <span class="bar bar3"></span>
-          <span class="menu">MENU</span>
-          <span class="close">CLOSE</span>
+          <span class="original-menu-bar original-menu-bar1"></span>
+          <span class="original-menu-bar original-menu-bar2"></span>
+          <span class="original-menu-bar original-menu-bar3"></span>
+          <span class="original-menu">MENU</span>
+          <span class="original-close">CLOSE</span>
         </button>
         <script>
           // jQueryは読み込み済み前提
