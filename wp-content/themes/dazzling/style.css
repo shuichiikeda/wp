@@ -1304,7 +1304,7 @@ button.original-btn-menu.original-menu-active .original-menu-bar2 {
 button.original-btn-menu.original-menu-active .original-menu-bar3 {
   transform: rotate(-30deg);
 }
-button.original-btn-menu.original-menu-active .original-menu-menu {
+button.original-btn-menu.original-menu-active .original-menu {
   display: none;
 }
 button.original-btn-menu.original-menu-active .original-menu-close {

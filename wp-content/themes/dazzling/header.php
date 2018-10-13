@@ -44,7 +44,7 @@
           <span class="original-menu-bar original-menu-bar2"></span>
           <span class="original-menu-bar original-menu-bar3"></span>
           <span class="original-menu">MENU</span>
-          <span class="original-close">CLOSE</span>
+          <span class="original-menu-close">CLOSE</span>
         </button>
         <script>
           // jQueryは読み込み済み前提
