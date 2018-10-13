@@ -111,7 +111,7 @@
        style="display:block"
        data-ad-client="ca-pub-7870164007728460"
        data-ad-slot="3050514414"
-       data-ad-format="auto"></ins>
+       data-ad-format="horizontal"></ins>
   <script>
     (adsbygoogle = window.adsbygoogle || []).push({});
   </script>
