@@ -1269,8 +1269,8 @@ button.original-btn-menu {
   letter-spacing: 0.1em;
   cursor: pointer;
   position: fixed;
-  top: 16px;
-  right: 16px;
+  top: 20px;
+  right: 28px;
   z-index: 1001;
   text-align: center;
   outline: none;
@@ -1321,19 +1321,28 @@ button.original-btn-menu.original-menu-active .original-menu-close {
   left: 0;
 }
 
+.original-btn-menu {
+  display: none;
+}
 @media (max-width: 767px) {
   #logo {
     position: absolute;
-    top: 0;
+    top: 20px;
   }
   #logo h1 a.navbar-brand {
-    font-size: 18px;
+    font-size: 20px;
   }
   p.site-description {
     position: relative;
-    top: 32px;
-    left: 14px;
-    font-size: 11px;
+    top: 55px;
+    left: 16px;
+    font-size: 13px;
+  }
+  #navbar {
+    margin-top: 46px;
+  }
+  .original-btn-menu {
+    display: block;
   }
 }
 
