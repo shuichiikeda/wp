@@ -33,12 +33,14 @@
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
+        <!--
 			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbaroriginal">
 			    <span class="sr-only"><?php _e( 'Toggle navigation', 'dazzling' ); ?></span>
 			    <span class="icon-bar"></span>
 			    <span class="icon-bar"></span>
 			    <span class="icon-bar"></span>
 			  </button>
+			  -->
         <button type="button" class="original-btn-menu">
           <span class="original-menu-bar original-menu-bar1"></span>
           <span class="original-menu-bar original-menu-bar2"></span>
@@ -47,16 +49,16 @@
           <span class="original-menu-close">CLOSE</span>
         </button>
         <script type="text/javascript">
-          console.log(333);
           // jQueryは読み込み済み前提
           jQuery(function($){
             $('.original-btn-menu').click(function(){
               console.log(111);
               $(this).toggleClass('original-menu-active');
+              $('.original-nav').toggleClass('original-nav-open');
             });
           })
         </script>
-        <nav class="original-nav" id="navbaroriginal">
+        <nav class="original-nav">
           <ul class="category-list">
               <?php wp_list_categories('title_li=&show_count=1&use_desc_for_title=1&depth=0'); //カテゴリの呼び出し?>
           </ul>
