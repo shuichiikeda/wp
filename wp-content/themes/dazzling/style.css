@@ -1353,7 +1353,7 @@ ul.main-category-list li.cat-item {
 }
 
 ul.main-category-list li.cat-item:before {/*疑似要素*/
-  font-family: "Font Awesome 5 Free";
+  font-family: fontawesome;
   content: '\f115';
   position: absolute;
   left : 1em;/*左端からのアイコンまでの距離*/
