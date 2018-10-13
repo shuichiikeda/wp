@@ -44,19 +44,22 @@
         <script>
           // jQueryは読み込み済み前提
           $(function(){
-            $('.nav_btn_menu').click(function(){
-              $('nav.original-nav').toggleClass('original-nav');}
-          });
+            $('.original-btn-menu').click(function(){
+              $(this).toggleClass('original-menu-active');
+              $('nav.original-nav').toggleClass('original-menu-active');
+            });
           })
         </script>
 
-        <button type="button" class="nav_btn_menu">
-          <span class="sr-only"><?php _e( 'Toggle navigation', 'dazzling' ); ?></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+        <button type="button" class="original-btn-menu">
+          <span class="bar bar1"></span>
+          <span class="bar bar2"></span>
+          <span class="bar bar3"></span>
+          <span class="menu">MENU</span>
+          <span class="close">CLOSE</span>
         </button>
-        <nav>
+
+        <nav class="original-nav">
           <!-- ナビの記述 -->
         </nav>
 

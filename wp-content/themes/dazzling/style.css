@@ -1257,3 +1257,56 @@ nav.original-nav {
 nav.original-nav-open {
   transform: translate(0);
 }
+
+/*   ボタンタグ設定   */
+button.original-btn-menu {
+  display: block;
+  background: none;
+  border: none;
+  padding: 0;
+  width: 42px;
+  color: #333;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1001;
+  text-align: center;
+  outline: none;
+}
+/*   ハンバーガーボタン3本線   */
+button.original-btn-menu span.original-menu-bar {
+  display: block;
+  height: 2px;
+  background-color: #333;
+  margin: 10px 0;
+  transition: all 0.2s;
+  transform-origin: 0 0;
+}
+button.original-btn-menu .original-menu-close {
+  letter-spacing: 0.08em;
+  display: none;
+}
+button.original-btn-menu .original-menu {
+  display: block;
+}
+/*  メニューアクティブ時  */
+button.original-btn-menu.original-menu-active span.original-menu-bar {
+  width: 49px;
+}
+button.original-btn-menu.original-menu-active .original-menu-bar1 {
+  transform: rotate(30deg);
+}
+button.original-btn-menu.original-menu-active .original-menu-bar2 {
+  opacity: 0;
+}
+button.original-btn-menu.original-menu-active .original-menu-bar3 {
+  transform: rotate(-30deg);
+}
+button.original-btn-menu.original-menu-active .original-menu-menu {
+  display: none;
+}
+button.original-btn-menu.original-menu-active .original-menu-close {
+  display: block;
+}
