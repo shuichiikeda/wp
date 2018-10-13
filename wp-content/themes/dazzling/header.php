@@ -49,7 +49,7 @@
         <script type="text/javascript">
           console.log(333);
           // jQueryは読み込み済み前提
-          $(function(){
+          jQuery(function($){
             $('.original-btn-menu').click(function(){
               console.log(111);
               $(this).toggleClass('original-menu-active');
