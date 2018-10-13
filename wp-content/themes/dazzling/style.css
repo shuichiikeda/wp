@@ -1239,3 +1239,21 @@ p.logged-in-as {
 .blog-card .clear {
   clear: both;
 }
+
+/*-------------------------
+  オリジナルハンバーガー
+-------------------------*/
+nav.original-nav {
+  width: 312px;
+  height: 100%;
+  transition: all 0.2s;
+  transform: translate(312px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #FFF;
+}
+nav.original-nav-open {
+  transform: translate(0);
+}

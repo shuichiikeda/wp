@@ -33,12 +33,32 @@
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
+        <!--
 			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-			    <span class="sr-only"><?php _e( 'Toggle navigation', 'dazzling' ); ?></span>
+			    <span class="sr-only"><?php // _e( 'Toggle navigation', 'dazzling' ); ?></span>
 			    <span class="icon-bar"></span>
 			    <span class="icon-bar"></span>
 			    <span class="icon-bar"></span>
 			  </button>
+        -->
+        <script>
+          // jQueryは読み込み済み前提
+          $(function(){
+            $('.nav_btn_menu').click(function(){
+              $('nav.original-nav').toggleClass('original-nav');}
+          });
+          })
+        </script>
+
+        <button type="button" class="nav_btn_menu">
+          <span class="sr-only"><?php _e( 'Toggle navigation', 'dazzling' ); ?></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <nav>
+          <!-- ナビの記述 -->
+        </nav>
 
 				<div id="logo">
 
