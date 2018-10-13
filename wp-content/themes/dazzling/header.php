@@ -39,6 +39,21 @@
 			    <span class="icon-bar"></span>
 			    <span class="icon-bar"></span>
 			  </button>
+        <button type="button" class="original-btn-menu">
+          <span class="bar bar1"></span>
+          <span class="bar bar2"></span>
+          <span class="bar bar3"></span>
+          <span class="menu">MENU</span>
+          <span class="close">CLOSE</span>
+        </button>
+        <script>
+          // jQueryは読み込み済み前提
+          $(function(){
+            $('.original-btn-menu').click(function(){
+              $(this).toggleClass('original-menu-active');
+            });
+          })
+        </script>
         <nav class="original-nav" id="navbaroriginal">
           <ul class="category-list">
               <?php wp_list_categories('title_li=&show_count=1&use_desc_for_title=1&depth=0'); //カテゴリの呼び出し?>
