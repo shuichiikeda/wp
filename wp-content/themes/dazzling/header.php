@@ -46,7 +46,8 @@
           <span class="original-menu">MENU</span>
           <span class="original-menu-close">CLOSE</span>
         </button>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+        <script type="text/javascript">
+          console.log(333);
           // jQueryは読み込み済み前提
           $(function(){
             $('.original-btn-menu').click(function(){
