@@ -46,10 +46,11 @@
           <span class="original-menu">MENU</span>
           <span class="original-menu-close">CLOSE</span>
         </button>
-        <script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
           // jQueryは読み込み済み前提
           $(function(){
             $('.original-btn-menu').click(function(){
+              console.log(111);
               $(this).toggleClass('original-menu-active');
             });
           })
