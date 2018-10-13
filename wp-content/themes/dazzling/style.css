@@ -1344,6 +1344,9 @@ button.original-btn-menu {
   button.original-btn-menu {
     display: block;
   }
+  #content {
+    margin-top: 0;
+  }
 }
 
 ul.main-category-list li.cat-item {
