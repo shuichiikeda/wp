@@ -39,8 +39,8 @@
 			    <span class="icon-bar"></span>
 			    <span class="icon-bar"></span>
 			  </button>
-        <nav class="original-nav navbaroriginal">
-          <!-- ナビの記述 -->
+        <nav class="original-nav" id="navbaroriginal">
+            <?php wp_list_categories('title_li=&show_count=1&use_desc_for_title=1&depth=0'); //カテゴリの呼び出し?>
         </nav>
 
 				<div id="logo">
