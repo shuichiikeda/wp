@@ -1363,3 +1363,7 @@ ul.main-category-list li.cat-item:before {/*疑似要素*/
   left : 1em;/*左端からのアイコンまでの距離*/
   color: #1FA67A;/*アイコン色*/
 }
+
+hr.custom-section-divider {
+  border-color: #E8E8E8;
+}

@@ -66,6 +66,6 @@
 
 		<?php edit_post_link( __( 'Edit', 'dazzling' ), '<i class="fa fa-pencil-square-o"></i><span class="edit-link">', '</span>' ); ?>
 		<?php dazzling_setPostViews(get_the_ID()); ?>
-		<hr class="section-divider">
+		<hr class="custom-section-divider">
 	</footer><!-- .entry-meta -->
 </article><!-- #post-## -->
