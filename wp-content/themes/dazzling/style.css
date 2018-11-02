@@ -1171,8 +1171,8 @@ p.logged-in-as {
   }
 
   .site-main article {
+    margin-bottom: -10px;
     width: 100%;
-    height: 210px;
   }
 }
 /*-------------------------
