@@ -65,5 +65,5 @@
 	</div><!-- .entry-content -->
 	<?php endif; ?>
 
-	<hr class="section-divider">
+	<hr class="custom-section-divider">
 </article><!-- #post-## -->
