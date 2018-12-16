@@ -79,7 +79,10 @@
 
 						<?php if( !get_header_image() ) : ?>
 
-							<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+							<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                  <!-- <?php // bloginfo( 'name' ); ?> -->
+                <img src="https://dont-be-webcreater.com/wp-content/uploads/2018/12/freefont_logo_othutomefont101-1-300x35.png">
+              </a>
 
 						<?php endif; // header image was removed (again) ?>
 

@@ -633,6 +633,9 @@ h1.site-title {
   color: #1FA67A;
   font-size: 24px;
   margin: 8px 0;
+  /* タイトルを画像にするため新しく追加*/
+  padding-left: 3px;
+  padding-top: 0;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
@@ -1324,6 +1327,9 @@ button.original-btn-menu.original-menu-active .original-menu-close {
 button.original-btn-menu {
   display: none;
 }
+#logo h1 a.navbar-brand img {
+  width: 500px;
+}
 @media (max-width: 767px) {
   #logo {
     position: absolute;
@@ -1331,6 +1337,9 @@ button.original-btn-menu {
   }
   #logo h1 a.navbar-brand {
     font-size: 20px;
+  }
+  #logo h1 a.navbar-brand img {
+    width: 374px;
   }
   p.site-description {
     position: relative;
