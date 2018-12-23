@@ -395,3 +395,10 @@ add_shortcode("nlink", "nlink_scode");
 // ここまで
 // 内部リンクのブログカード化（ショートコード）
 //---------------------------------------//
+
+function widgets_categories_orderargs($cat_args) {
+    $cat_args['orderby'] = 'count';
+    $cat_args['order'] = 'DESC';
+    return $cat_args;
+}
+add_filter('widget_categories_args', 'widgets_categories_orderargs', 50);
