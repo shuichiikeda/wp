@@ -12,6 +12,8 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name=”description” content=”WEBクリエイターに転職/独立希望の方へ。今をときめくWEBライター、WEBエンジニア、WEBデザイナーの方へ。誰よりもどこよりも、リアルで耳寄りな声が拾えるメディアです。”>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <script>
